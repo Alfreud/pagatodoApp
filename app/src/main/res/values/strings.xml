@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PagaTodoApp</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="password_missed">Olvidé mi contraseña</string>
+    <string name="enter_app">Entrar</string>
+    <string name="register_account">No tengo cuenta. Registrarme</string>
+</resources>
