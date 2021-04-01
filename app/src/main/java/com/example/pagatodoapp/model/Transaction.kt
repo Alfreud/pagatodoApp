@@ -8,5 +8,5 @@ data class Transaction(
         var merchantName: String,
         var currencyCode: String,
         var amount: Int,
-        var timestamp: String
+        var timestamp: Int
 )
