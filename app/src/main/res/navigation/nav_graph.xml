@@ -3,11 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
-
+    app:startDestination="@id/validFragment">
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.pagatodoapp.ui.main.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/validFragment"
+        android:name="com.example.pagatodoapp.ui.main.fragments.ValidFragment"
+        android:label="Valid Request"
+        tools:layout="@layout/fragment_valid" />
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.example.pagatodoapp.ui.main.fragments.EmptyFragment"
+        android:label="Empty Request"
+        tools:layout="@layout/fragment_empty" />
+    <fragment
+        android:id="@+id/malformedFragment"
+        android:name="com.example.pagatodoapp.ui.main.fragments.MalformedFragment"
+        android:label="Malformed Request"
+        tools:layout="@layout/fragment_malformed" />
 </navigation>

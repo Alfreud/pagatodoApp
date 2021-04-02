@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/validFragment"
+        android:icon="@drawable/valid"
+        android:title="valid"/>
+
+    <item
+        android:id="@+id/emptyFragment"
+        android:icon="@drawable/empty"
+        android:title="empty"/>
+
+    <item
+        android:id="@+id/malformedFragment"
+        android:icon="@drawable/malformed"
+        android:title="malformed"/>
+</menu>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.MainFragment">
+    tools:context=".ui.main.fragments.MalformedFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -28,8 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="8dp"
-        android:text="@string/error_message"
         android:visibility="gone"
+        android:gravity="center"
+        android:textSize="18sp"
         tools:visibility="visible"/>
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.pagatodoapp.ui.main
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pagatodoapp.R
 import com.example.pagatodoapp.model.Transaction
 import kotlinx.android.synthetic.main.transaction_item.view.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 class TransactionAdapter : ListAdapter<Transaction, TransactionAdapter.MainViewHolder>(TransactionComparator()) {
 
@@ -26,9 +29,16 @@ class TransactionAdapter : ListAdapter<Transaction, TransactionAdapter.MainViewH
                 tvmerchantName.text = currentItem.merchantName
                 tvcurrencyCode.text = currentItem.currencyCode
                 tvamount.text = currentItem.amount.toString()
-                tvtimestamp.text = currentItem.timestamp.toString()
+                tvtimestamp.text = convertLongToTime(currentItem.timestamp.toLong())
             }
         }
+    }
+
+    @SuppressLint("SimpleDateFormat")
+    fun convertLongToTime(time: Long): String {
+        val date = Date(time)
+        val format = SimpleDateFormat("yyyy.MM.dd HH:mm")
+        return format.format(date)
     }
 
     inner class MainViewHolder(v: View) : RecyclerView.ViewHolder(v) {
