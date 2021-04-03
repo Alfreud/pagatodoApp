@@ -15,41 +15,12 @@
   desplegados en una de las multiples pantallas de la app.
   
 4.- Bibliotecas utilizadas en este proyecto
-  Las enumero ya que si fueron bastantes, adiciionalmente anexo el link de un articulo en Medium que fue pilar importante a la hora
-  de hacer este proyecto, entre otras fuentes
+  Las bibliotecas de terceros que ocupe fueron bastantes, no las enumero ya que estan agregadas desde el archivo Build.gradle, 
+  adicionalmente anexo el link de un articulo en Medium que fue pilar importante a la hora de hacer este proyecto, entre otras
+  fuentes
   
   Articulo Medium
   https://sberoch.medium.com/arquitectura-en-android-hilt-mvvm-kotlin-coroutines-live-data-room-y-retrofit-68bf458ec76e
   
-  canale de youtube
+  canales de youtube
   CodingInFlow - Android dev tutorials
-  
-  librerias de terceros
-  
-  // Material Design
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'com.github.florent37:shapeofview:1.0.7'
-
-    // Navigation Components
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-
-    //Dagger - Hilt
-    implementation "com.google.dagger:hilt-android:2.31-alpha"
-    kapt "com.google.dagger:hilt-android-compiler:2.31-alpha"
-
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
-    kapt "androidx.hilt:hilt-compiler:1.0.0-beta01"
-
-    // Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.1'
-
-    // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
-
-    // Coroutine Lifecycle Scopes
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
